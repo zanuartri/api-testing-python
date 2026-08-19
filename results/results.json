@@ -1,0 +1,87 @@
+{
+  "stack": "api-testing-python",
+  "platform": "api",
+  "run_at": "2026-08-19T01:23:46.446127+00:00",
+  "total": 15,
+  "passed": 15,
+  "failed": 0,
+  "skipped": 0,
+  "duration_seconds": 3.9407,
+  "tests": [
+    {
+      "name": "tests/test_auth.py::test_login_returns_valid_token",
+      "status": "passed",
+      "duration": 0.3249
+    },
+    {
+      "name": "tests/test_auth.py::test_token_grants_access_to_protected_endpoint",
+      "status": "passed",
+      "duration": 0.199
+    },
+    {
+      "name": "tests/test_auth.py::test_invalid_token_is_rejected",
+      "status": "passed",
+      "duration": 0.2562
+    },
+    {
+      "name": "tests/test_auth.py::test_missing_token_is_rejected",
+      "status": "passed",
+      "duration": 0.2556
+    },
+    {
+      "name": "tests/test_chained_flow.py::test_create_fetch_delete_confirm_gone",
+      "status": "passed",
+      "duration": 0.4085
+    },
+    {
+      "name": "tests/test_crud_objects.py::test_create_read_update_delete_object",
+      "status": "passed",
+      "duration": 0.3744
+    },
+    {
+      "name": "tests/test_negative.py::test_login_with_wrong_password_is_rejected",
+      "status": "passed",
+      "duration": 0.2765
+    },
+    {
+      "name": "tests/test_negative.py::test_login_with_missing_password_is_rejected",
+      "status": "passed",
+      "duration": 0.2581
+    },
+    {
+      "name": "tests/test_negative.py::test_login_with_nonexistent_user_is_rejected",
+      "status": "passed",
+      "duration": 0.2543
+    },
+    {
+      "name": "tests/test_negative.py::test_get_nonexistent_object_returns_404[does-not-exist-123]",
+      "status": "passed",
+      "duration": 0.1256
+    },
+    {
+      "name": "tests/test_negative.py::test_get_nonexistent_object_returns_404[0]",
+      "status": "passed",
+      "duration": 0.1385
+    },
+    {
+      "name": "tests/test_performance.py::test_list_objects_responds_within_threshold",
+      "status": "passed",
+      "duration": 0.1194
+    },
+    {
+      "name": "tests/test_schema_validation.py::test_created_object_matches_schema",
+      "status": "passed",
+      "duration": 0.2153
+    },
+    {
+      "name": "tests/test_schema_validation.py::test_get_object_list_items_match_schema",
+      "status": "passed",
+      "duration": 0.114
+    },
+    {
+      "name": "tests/test_schema_validation.py::test_delete_response_matches_schema",
+      "status": "passed",
+      "duration": 0.2223
+    }
+  ]
+}
