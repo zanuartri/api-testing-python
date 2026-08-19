@@ -1,6 +1,6 @@
 # api-testing-python
 
-![CI](https://github.com/<OWNER>/<REPO>/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/zanuartri/api-testing-python/actions/workflows/ci.yml/badge.svg)
 
 API test automation portfolio project in Python + pytest. Pure API testing
 (no UI, no mobile) against two public REST services:
