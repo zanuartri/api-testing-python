@@ -28,3 +28,12 @@ jobs:
         with:
           name: results
           path: results/results.json
+
+      - name: Publish results to QA dashboard
+        if: always()
+        run: |
+          curl -sf -X POST "https://qa.zanuar.dev/api/results/api-testing-python" \
+            -H "Authorization: Bearer ${{ secrets.QA_DASHBOARD_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            --data @results/results.json \
+          || echo "::warning::failed to publish results to qa.zanuar.dev, dashboard may be stale"
